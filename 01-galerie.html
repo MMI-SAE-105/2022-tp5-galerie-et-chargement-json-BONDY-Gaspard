@@ -9,10 +9,12 @@
     <script src='main.js'></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
-<body x-data="{imageChien:'https://picsum.photos/id/237/400/300',}">
+<body>
     <h1>Galerie</h1>
 <p>lorem⇥</p>
-<div class="overlay">
+<div class="overlay"
+x-data="{imageChien:'https://picsum.photos/id/237/400/300',}" 
+@click="imageChien=null">
     <figure>
         <img :src="imageChien" alt="image 237... un chiot">
     </figure>

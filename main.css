@@ -36,12 +36,12 @@
         /* Rounded border */
     }
     .overlay>figure {
-        /* No margin */
-        /* 1rem padding */
-        /* White border of 2px */
+        margin: 0;  /* No margin */
+        padding: 1rem;  /* 1rem padding */
+        border: 2px white;  /* White border of 2px */
     }
     
     .overlay>figure>img {
-        /* Max width 100% for responsive image */
-        /* Height auto for keeping the ratio */
+        max-width: 100%;    /* Max width 100% for responsive image */
+        height: auto;   /* Height auto for keeping the ratio */
     }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>JSON</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main2.css'>
+    <script src='main2.js'></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+    <h1>JSON</h1>
+    <ul x-data="{
+        async données (){
+            const resp = await fetch('');
+            return await resp.json();
+        },
+    }">
+    <template x-data="">
+        <li>
+          <span x-text="">Nom</span>
+          <a x-text="" x-text="">
+            projet</a>
+        </li>
+    </template>
+</ul>
+<body>
+</body>
+</html>
